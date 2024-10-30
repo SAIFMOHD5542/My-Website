@@ -1,0 +1,198 @@
+/* General styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section styling */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/1600x900/?travel,luggage');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+#home h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Card layout for Booking and Contact */
+#booking, #contact {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    margin: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2b5876;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #2b5876;
+}
+
+button[type="submit"] {
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f39c12;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2b5876;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust header text and navigation for mobile */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Responsive sections */
+    section {
+        padding: 1.5rem 1rem;
+    }
+
+    #home h2 {
+        font-size: 1.8rem;
+    }
+
+    #home p {
+        font-size: 1.1rem;
+    }
+
+    /* Form adjustments for mobile */
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form textarea {
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    /* Reduce padding in sections and forms for mobile */
+    #booking, #contact {
+        padding: 1.5rem;
+    }
+}

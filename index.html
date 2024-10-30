@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECURE LUGGAGE</title>
+    <link rel="stylesheet" href="gpt.css">
+</head>
+<body>
+    <header>
+        <h1>SECURE LUGGAGE</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#booking">Book Storage</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our Luggage Storage Service</h2>
+        <p>Store your luggage securely while you explore the city!</p>
+    </section>
+
+    <section id="booking">
+        <h2>Book Storage</h2>
+        <form
+           action="https://formspree.io/f/xblrvern"
+        method="POST"
+        >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+            
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <label for="location">Choose Storage Location:</label>
+            <label>
+            <input type="radio" name="Location" value="Melbourne"> Melbourne
+            </label><br>
+            <label>
+            <input type="radio" name="Location" value="Sydney"> Sydney
+            </label><br>
+            <label>
+            <input type="radio" name="Location" value="Brisbane"> brisbane
+            </label>
+
+            <h2>My Map</h2>
+
+<!-- Replace the src attribute value with the link generated from Google Maps -->
+<iframe
+    width="600"
+    height="450"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.co.in/maps/place/EzyMart/@-37.8132225,144.9576416,17z/data=!4m14!1m7!3m6!1s0x6ad642b569ef9fff:0xb2c4f64bbae41e2e!2sEzyMart!8m2!3d-37.8132268!4d144.9625125!16s%2Fg%2F11b7r_qgf6!3m5!1s0x6ad642b569ef9fff:0xb2c4f64bbae41e2e!8m2!3d-37.8132268!4d144.9625125!16s%2Fg%2F11b7r_qgf6?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D">
+</iframe>
+
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+            
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luggage Storage</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
